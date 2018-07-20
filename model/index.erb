@@ -1,0 +1,526 @@
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Side Menu</title>
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#C85D5D"
+          stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#DCA764"
+          stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#DED96E"
+          stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;></a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div id="main">
+    <h1><h1>
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById("side-menu").style.width = '250px';
+      document.getElementById("main").style.marginLeft = '250px';
+    }
+    function closeSlideMenu(){
+      document.getElementById("side-menu").style.width = '0';
+      document.getElementById("main").style.marginLeft = '0';
+    }
+
+  </script>
+
+</body>
+</html>
+
+
+<html>
+	<head>
+
+		<title>Tessellate by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body class="is-preload">
+
+
+		<!-- Header -->
+			<section id="header" class="dark">
+				<header>
+					<h1>Welcome to EBuJo </h1>
+					<p> An Online Bullet Journal </p>
+				</header>
+				<footer>
+					<a href="#first" class="button scrolly">Click To Access Menu</a>
+				</footer>
+			</section>
+			<section id="gratitude" class="main">
+				<header>
+					<div class="container">
+						<h2>Be Grateful </h2>
+						<p> Practicing mindfullness and gratitude can positively impact your life. Being grateful will lead to a positive outlook on life.
+							Through EBuJo, you can note three things that you are gratful for everyday.``
+						</p>
+					</div>
+				</header>
+
+
+				<div class="content dark style2">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<section>
+
+									<footer>
+
+									</footer>
+								</section>
+							</div>
+							<div class="col-20 col-42-narrow">
+								<form method="post" action="/gratitude">
+									<p>Gratitude 1: <input type= "text" name="gratitude1"></p>
+									<p>Gratitude 2: <input type= "text" name="gratitude2"></p>
+									<p>Gratitude 3: <input type= "text" name="gratitude3"></p>
+									<input type= "Submit">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!-- First -->
+
+		<!-- Second -->
+			<section id="memories" class="main">
+				<header>
+					<div class="container">
+						<h2>Note Memories</h2>
+						<p> Everyday, EBuJo allows you to store your favorite memories of the day. It also allows you to go back and look at old memories
+						and reflect upon them. </p>
+					</div>
+
+				</header>
+				<div class="content dark style2">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<section>
+
+									<footer>
+
+									</footer>
+								</section>
+							</div>
+							<div class= "col-20 col-42-narrow">
+								<form method="post" action="/gratitude">
+									<p>Memory 1: <input type= "text" name="mem1"></p>
+									<p>Memory 2: <input type= "text" name="mem2"></p>
+									<p>Memory 3: <input type= "text" name="mem3"></p>
+									<input type= "Submit">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- Third -->
+
+
+			<section id="entries" class="main">
+				<header>
+					<div class="container">
+						<h2>Journal Entries</h2>
+						<p> If you have anything else to add, please enter it below. </p>
+					</div>
+
+				</header>
+				<div class="content dark style2">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<section>
+									<textarea rows="10" cols="70" name="message" placeholder="Message"></textarea>
+									<input type= "Submit">
+								</section>
+							</div>
+<!--
+								 <textarea rows="10" cols="70" name="message" placeholder="Message"></textarea>
+<div>
+									<input type= "Submit"> -->
+</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Basic Elements -->
+		<!--
+			<section class="main">
+				<header>
+					<div class="container">
+						<h2>A Whole Lotta Elements</h2>
+						<p>General purpose elements for every general purpose. Or something like that.</p>
+					</div>
+				</header>
+				<div class="content style1 dark">
+					<div class="container">
+						<section>
+							<header>
+								<h3>Paragraph</h3>
+								<p>This is a byline</p>
+							</header>
+							<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+							habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+							leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+							amet risus elit.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Blockquote</h3>
+							</header>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+							tempus euismod. Vestibulum ante ipsum primis in faucibus. Cras sit amet urna eros, id egestas
+							tempus ante ipsum primis in faucibus orci luctus et ultrices.</blockquote>
+						</section>
+						<section>
+							<header>
+								<h3>Divider</h3>
+							</header>
+							<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+							<hr />
+							<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Unordered List</h3>
+							</header>
+							<ul class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ul>
+						</section>
+						<section>
+							<header>
+								<h3>Ordered List</h3>
+							</header>
+							<ol class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ol>
+						</section>
+						<section>
+							<header>
+								<h3>Table</h3>
+							</header>
+							<div class="table-wrapper">
+								<table class="default">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>00001</td>
+											<td>Lorem ipsum dolor</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00002</td>
+											<td>Sit amet nullam</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00003</td>
+											<td>Feugiat felis viverra</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00004</td>
+											<td>Sagittis enim felis</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00005</td>
+											<td>Nullam sed vestibulum</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="3"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						<section>
+							<header>
+								<h3>Form</h3>
+							</header>
+							<form method="post" action="#">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-narrow">
+										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
+									</div>
+									<div class="col-6 col-12-narrow">
+										<input type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+									</div>
+									<div class="col-12">
+										<div class="select" tabindex="-1">
+											<select name="department" id="department">
+												<option value="">Choose a department</option>
+												<option value="1">Manufacturing</option>
+												<option value="2">Administration</option>
+												<option value="3">Support</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Enter your message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button" value="Send Message" /></li>
+											<li><input type="reset" class="button alt" value="Clear Form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</section>
+		-->
+		<section id="mood" class="main">
+<header>
+		<div class = "container">
+			<h2> Mood </h2>
+			<p> "Enter a number from 0-10 to describe your mood. 0 being the lowest and 10 being the highest." </p>
+		</div>
+
+</header>
+		<div class="content dark style1 featured">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-12-narrow">
+						<section>
+
+						</section>
+					</div>
+					<div class="col-4 col-12-narrow">
+						<section>
+
+
+							<head>
+							    <script type="text/javascript">
+
+							      function sliderChange(val){
+							        document.getElementById('sliderStatus').innerHTML=val;
+							      }
+
+							    </script>
+							  </head>
+            <!-- <form action='/' method ='POST'> -->
+							  <body>
+
+							    <div>
+
+							      <input type="range" value="5" min="0" max="10" step="1" onChange="sliderChange(this.value)">
+							      <span id="sliderStatus">5</span>
+							    </div>
+
+
+							</body>
+
+								<input type= "Submit">
+            <!-- </form> -->
+
+                <!-- <%mood = gets.chomp.to_i
+                if mood < 5
+                  puts "Sorry you're having a bad day! Here are some cute animals to brighten your day"
+                	images[number]
+                elsif mood==5 && mood<8
+                  puts "Go out and do something that will boost your happiness. Here are some suggestions:
+                  - Try some new food
+                  - Meet up with some friends
+                  - Have a movie night by yourself
+                  - Have a spa day"
+                else
+                  puts "Congrats on having a great day! We hope this trend continues. "
+                  congratsarray
+                end -->
+
+						</section>
+					</div>
+					<div class="col-4 col-12-narrow">
+						<section>
+
+						</section>
+					</div>
+					<div class="col-12">
+						<footer>
+
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+		</section>
+
+<!-- Calendar -->
+<section id="mood" class="main">
+<header>
+<div class = "container">
+	<h2> Calendar </h2>
+	<p> You can see past entries in this calendar. </p>
+</div>
+
+<iframe src="https://calendar.google.com/calendar/embed?title=Past%20Days&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=lauratan878%40gmail.com&amp;color=%23865A5A&amp;ctz=America%2FChicago" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</header>
+
+				<section>
+
+				</section>
+			</div>
+			<div class="col-4 col-12-narrow">
+				<section>
+
+
+
+
+
+				</section>
+			</div>
+			<div class="col-4 col-12-narrow">
+				<section>
+
+				</section>
+			</div>
+			<div class="col-12">
+				<footer>
+
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+		<!-- Fourth -->
+
+			<section id="about" class="main">
+				<header>
+					<h2><div class="container">About the Creators</h2>
+						<h3>We were just memeing around. Thanks Anna for almost breaking our website.</h3>
+            <body> <image src="images/forsite.jpg" alt="The Creators" vspace="50" height="340" width="250"/></body>
+					</div>
+				</header>
+				<div class="content style4 featured">
+					<div class="container medium">
+						<form method="post" action="#">
+							<div class="row gtr-50">
+
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+	</body>
+</html>
